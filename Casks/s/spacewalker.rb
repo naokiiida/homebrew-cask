@@ -1,6 +1,6 @@
 cask "spacewalker" do
-  version "1.7.5"
-  sha256 "ea1d030e7e9f45168fb41f29354f55debb76cfb6a4d39f575d54a33d8d6dfc1c"
+  version "1.8.0"
+  sha256 "e121eb26b6bf983eea68f9e6b74c51228afdfad17f2db5b5d14348634860c3bd"
 
   url "https://static.viture.dev/external-file/macOS/SpaceWalker-Installer_v#{version}.dmg",
       verified: "static.viture.dev/external-file/macOS/"
@@ -16,9 +16,9 @@ cask "spacewalker" do
   end
 
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: ">= :sonoma"
 
-  app "SpaceWalker.app"
+  app "Immersive 3D.app"
 
   zap trash: [
     "~/Library/Application Support/com.viture.spacewalker",
